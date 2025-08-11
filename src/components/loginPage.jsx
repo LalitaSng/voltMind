@@ -18,27 +18,31 @@ function LoginPage() {
             />
 
         {/* Positioned overlay image */}
-            <img
-                src={voltText}
-                alt="voltMind"
-                className="absolute
-                    left-[50px] top-[40px]      // base screen
-                    sm:left-[100px] sm:top-[80px]  // small screens
-                    md:left-[150px] md:top-[100px] // medium
-                    lg:left-[237px] lg:top-[135px] "// large screens
+        <img
+            src={voltText}
+            alt="voltMind"
+            className="absolute
+                left-[50px] top-[30px]
+                sm:left-[100px] sm:top-[70px]
+                md:left-[150px] md:top-[90px]
+                lg:left-[237px] lg:top-[125px]
+                w-[clamp(120px,18vw,280px)]"
             />
 
-            <p className="absolute left-[20px] top-[40px] sm:left-[157px] sm:top-[311px] text-white poppins" id="content">
-             Lorem Ipsum is simply dummy text.
-            </p>
+        <p
+            className="
+                absolute
+                left-[20px] top-[10px]
+                sm:left-[157px] sm:top-[280px]
+                text-white poppins" id="content"
+        >
+            Lorem Ipsum is simply dummy text.
+        </p>
 
-
-            <img
-                src={TermsAndCondition}
-                alt="Terms and Conditions"
-                className="absolute
-                   absolute bottom-[5%] left-1/2 -translate-x-1/2
-
+        <img
+            src={TermsAndCondition}
+            alt="Terms and Conditions"
+            className="absolute bottom-[5%] left-1/2 -translate-x-1/2
                     w-[200px] sm:w-[230px] md:w-[273px]
                     h-auto" 
             />
