@@ -4,10 +4,12 @@ import LoginWithGitHub from './components/LoginWithGitHub';
 import RequestAccessPage from './components/RequestAccessPage';
 import RequestSubmittedPage from './components/RequestSubmittedPage';
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import VoltMindDashboard from './components/VoltMindDashboard';
 
 function App() {
     return (
       <BrowserRouter>
+        <VoltMindDashboard/>
         <Routes>
           <Route path="/" element={<Navigate to="/login" replace />} />
           <Route path="/login" element={<LoginPage />} />
